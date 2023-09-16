@@ -219,6 +219,7 @@ Description: Home Section CSS
   color: var(--text-primary);
 }
 
+
 #home .home-title-text {
   font-size: 17px;
   font-weight: 500;
@@ -334,7 +335,6 @@ $$ |  $$\ $$ |  $$ |$$ |  $$ | $$ |$$\ $$  __$$ |$$ |        $$ |$$\
 
 Description: Contact Us Section
 *********************************************************************/
-
 #contact-us #message {
   resize: none;
 }
@@ -378,13 +378,18 @@ Description: Media Queries Section CSS
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-
   /* Home Section */
+  #home {
+    padding: 50px 0;
+  }
+
+  #home .home-title {
+    font-size: 50px !important;
+  }
+
   #home .learn-more-btn-section {
     justify-content: center;
   }
-
- 
 
   /* Latest News Section */
   #latest-news .news-content-section {
@@ -394,6 +399,16 @@ Description: Media Queries Section CSS
   #latest-news .news-content-section p,
   #latest-news .news-content-section h4 {
     text-align: left;
+  }
+  
+
+  /* About Us Home Section */
+  .about-us-home-section .home-subtitle {
+    font-size: 14px !important;
+  }
+  
+  .about-us-home-section .home-title {
+    font-size: 50px !important;
   }
 
   /* Contact Us Home Section */
@@ -420,7 +435,16 @@ Description: Media Queries Section CSS
     justify-content: left;
   }
 
-   /* Contact Us Home Section */
+  /* About Us - Home Section */
+  .about-us-home-section .home-subtitle  {
+    font-size: 12px !important;
+  }
+
+  .about-us-home-section .home-title  {
+    font-size: 50px !important;
+  }
+
+  /* Contact Us Home Section */
   .contact-us-home-section .home-subtitle  {
     font-size: 14px !important;
   }
@@ -428,8 +452,6 @@ Description: Media Queries Section CSS
   .contact-us-home-section .home-title  {
     font-size: 45px !important;
   }
-
-  
 
 }
 
@@ -447,7 +469,16 @@ Description: Media Queries Section CSS
     font-size: 24px;
   }
 
-   /* Contact Us Home Section */
+  /* About Us - Home Section */
+  .about-us-home-section .home-subtitle  {
+    font-size: 18px !important;
+  }
+
+  .about-us-home-section .home-title  {
+    font-size: 60px !important;
+  }
+
+  /* Contact Us - Home Section */
   .contact-us-home-section .home-subtitle  {
     font-size: 18px !important;
   }

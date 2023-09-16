@@ -1,5 +1,236 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Font Variables */
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: 'Quicksand', sans-serif;
+
+  /* Background color */
+  --bg-primary: #104183;
+  --bg-secondary: #225985;
+  --bg-black: #121212;
+
+  /* Text Color Variables */
+  --text-primary: #104183;
+  --text-secondary: #225985;
+  --text-white: #fff;
+  --text-black: #121212;
+  --text-black-2: #23272a;
+  --text-light: #798089;
+  --text-light-2: #5e5e72;
+  --text-light-3: #A0A0A0; 
+}
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  background: #fff;
+  color: var(--text-black);
+  overflow-x: hidden;
+  padding-top: 70px;
+}
+
+/***************************************
+$$$$$$$\    $$\               
+$$  __$$\   $$ |              
+$$ |  $$ |$$$$$$\   $$$$$$$\  
+$$$$$$$\ |\_$$  _|  $$  __$$\ 
+$$  __$$\   $$ |    $$ |  $$ |
+$$ |  $$ |  $$ |$$\ $$ |  $$ |
+$$$$$$$  |  \$$$$  |$$ |  $$ |
+\_______/    \____/ \__|  \__|
+                                                        
+Description: Button CSS
+***************************************/
+
+.btn-primary {
+  background-color: var(--text-primary);
+  color: var(--text-white);
+  border-color: var(--text-primary);
+}
+
+/***************************************
+$$\      $$\           $$\           
+$$$\    $$$ |          \__|          
+$$$$\  $$$$ | $$$$$$\  $$\ $$$$$$$\  
+$$\$$\$$ $$ | \____$$\ $$ |$$  __$$\ 
+$$ \$$$  $$ | $$$$$$$ |$$ |$$ |  $$ |
+$$ |\$  /$$ |$$  __$$ |$$ |$$ |  $$ |
+$$ | \_/ $$ |\$$$$$$$ |$$ |$$ |  $$ |
+\__|     \__| \_______|\__|\__|  \__|
+                                    
+Description: Navigation Section CSS
+***************************************/
+#header .navbar-toggler {
+  border: none;
+}
+
+#header .navbar-toggler:focus {
+  box-shadow: none;
+  color: var(--text-primary);
+}
+
+#header .navbar-toggler-icon {
+  width: unset;
+  height: unset;
+}
+
+#header .navbar-nav .nav-item .nav-link {
+  color: var(--text-primary);
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+#header .navbar-nav .nav-item .nav-link:hover,
+#header .navbar-nav .nav-item .nav-link.active {
+  border-bottom: 3px solid var(--text-secondary);
+}
+
+#header .navbar {
+  -webkit-tranistion: all .2s linear;
+  -o-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+/* #header .navbar-logo {
+  width: auto;
+  height: 45px;
+} */
+
+#header .navbar-brand img {
+  max-width: 210px;
+  height: auto;
+}
+
+/******************************************
+$$\   $$\                                   
+$$ |  $$ |                                  
+$$ |  $$ | $$$$$$\  $$$$$$\$$$$\   $$$$$$\  
+$$$$$$$$ |$$  __$$\ $$  _$$  _$$\ $$  __$$\ 
+$$  __$$ |$$ /  $$ |$$ / $$ / $$ |$$$$$$$$ |
+$$ |  $$ |$$ |  $$ |$$ | $$ | $$ |$$   ____|
+$$ |  $$ |\$$$$$$  |$$ | $$ | $$ |\$$$$$$$\ 
+\__|  \__| \______/ \__| \__| \__| \_______|
+                                   
+
+Description: Home Section CSS
+******************************************/
+#home {
+  display: flex;
+  width: 100%;
+  padding: 100px 0 125px;
+  background: url('../images/home-bg.png');
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .home-subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: var(--text-light-2);
+}
+
+#home .home-title {
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 60px;
+  /* text-transform: capitalize; */
+  line-height: 1.15;
+  margin-bottom: 25px;
+  color: var(--text-black);
+}
+
+#home .home-title span {
+  color: var(--text-primary);
+}
+
+#home .home-title-text {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  max-width: 450px;
+  color: var(--text-light-2);
+}
+
+#home .learn-more-btn-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#home .home-img-section img {
+  width: 100%;
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+/***********************************************
+$$\      $$\                 $$\ $$\           
+$$$\    $$$ |                $$ |\__|          
+$$$$\  $$$$ | $$$$$$\   $$$$$$$ |$$\  $$$$$$\  
+$$\$$\$$ $$ |$$  __$$\ $$  __$$ |$$ | \____$$\ 
+$$ \$$$  $$ |$$$$$$$$ |$$ /  $$ |$$ | $$$$$$$ |
+$$ |\$  /$$ |$$   ____|$$ |  $$ |$$ |$$  __$$ |
+$$ | \_/ $$ |\$$$$$$$\ \$$$$$$$ |$$ |\$$$$$$$ |
+\__|     \__| \_______| \_______|\__| \_______|
+                                               
+                                               
+                                   
+
+Description: Media Queries Section CSS
+***********************************************/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  /* Home Section */
+  #home .learn-more-btn-section {
+    justify-content: center;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  /* Home Section */
+  #home .learn-more-btn-section {
+    justify-content: left;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 992px) {
+  
+  /* Home Section */
+  #home .home-subtitle {
+    font-size: 24px;
+  }
+
+  #home .learn-more-btn-section {
+    justify-content: left;
+  }
+  
 }

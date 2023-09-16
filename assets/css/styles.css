@@ -334,6 +334,7 @@ $$ |  $$\ $$ |  $$ |$$ |  $$ | $$ |$$\ $$  __$$ |$$ |        $$ |$$\
 
 Description: Contact Us Section
 *********************************************************************/
+
 #contact-us #message {
   resize: none;
 }
@@ -357,6 +358,7 @@ Description: Contact Us Section
   color: var(--text-light-2);
   font-size: 17px;
 }
+
 
 /***********************************************
 $$\      $$\                 $$\ $$\           
@@ -382,6 +384,8 @@ Description: Media Queries Section CSS
     justify-content: center;
   }
 
+ 
+
   /* Latest News Section */
   #latest-news .news-content-section {
     text-align: center;
@@ -390,6 +394,19 @@ Description: Media Queries Section CSS
   #latest-news .news-content-section p,
   #latest-news .news-content-section h4 {
     text-align: left;
+  }
+
+  /* Contact Us Home Section */
+  .contact-us-home-section .row {
+    flex-direction: column-reverse;
+  }
+
+  .contact-us-home-section .home-subtitle  {
+    font-size: 16px !important;
+  }
+
+  .contact-us-home-section .home-title  {
+    font-size: 50px !important;
   }
 
 }
@@ -402,6 +419,17 @@ Description: Media Queries Section CSS
   #home .learn-more-btn-section {
     justify-content: left;
   }
+
+   /* Contact Us Home Section */
+  .contact-us-home-section .home-subtitle  {
+    font-size: 14px !important;
+  }
+
+  .contact-us-home-section .home-title  {
+    font-size: 45px !important;
+  }
+
+  
 
 }
 
@@ -417,6 +445,15 @@ Description: Media Queries Section CSS
   /* Home Section */
   #home .home-subtitle {
     font-size: 24px;
+  }
+
+   /* Contact Us Home Section */
+  .contact-us-home-section .home-subtitle  {
+    font-size: 18px !important;
+  }
+
+  .contact-us-home-section .home-title  {
+    font-size: 50px !important;
   }
   
 }

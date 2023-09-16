@@ -1,0 +1,310 @@
+<!--***********************************************
+      ____                  __ __  ____  __ __
+     / __ )____ _________  / // / / __ \/ // /
+    / __  / __ `/ ___/ _ \/ // /_/ / / / // /_
+   / /_/ / /_/ (__  )  __/__  __/ /_/ /__  __/
+  /_____/\__,_/____/\___/  /_/  \____/  /_/   
+                                              
+Developer: Galvo, Jb @ https://github.com/jbgalvo
+
+Description: Project 1 - Responsive Website Redesign 
+
+*************************************************-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--****************************************
+  $$\      $$\            $$\               
+  $$$\    $$$ |           $$ |              
+  $$$$\  $$$$ | $$$$$$\ $$$$$$\    $$$$$$\  
+  $$\$$\$$ $$ |$$  __$$\\_$$  _|   \____$$\ 
+  $$ \$$$  $$ |$$$$$$$$ | $$ |     $$$$$$$ |
+  $$ |\$  /$$ |$$   ____| $$ |$$\ $$  __$$ |
+  $$ | \_/ $$ |\$$$$$$$\  \$$$$  |\$$$$$$$ |
+  \__|     \__| \_______|  \____/  \_______|
+                                            
+  Description: Metatags Section
+  ******************************************-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" 
+        content="Pag-IBIG Fund is a government-owned and controlled corporation in the Philippines that provides housing loans, savings, and other financial services to Filipino workers." />
+  <meta name="keywords" content="web app" />
+  <meta name="author" content="developer" />
+
+  <!--  Open Graph / Facebook  -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pagibig-fund-responsive-website-redesign.vercel.app/" />
+  <meta property="og:title" content="Pag-IBIG Fund Redesign" />
+  <meta property="og:image" content="https://pagibig-fund-responsive-website-redesign.vercel.app/assets/images/pagibig-meta-data-logo.png" />
+  <meta property="og:image:alt" content="Pag-IBIG Fund Logo" />
+  <meta property="og:description" 
+        content="Pag-IBIG Fund is a government-owned and controlled corporation in the Philippines that provides housing loans, savings, and other financial services to Filipino workers.">
+  <meta property="og:site_name" content="Pag-IBIG Fund" />
+
+  <!-- Twitter Metatags -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://pagibig-fund-responsive-website-redesign.vercel.app/" />
+  <meta property="twitter:title" content="Pag-IBIG Fund" />
+  <meta property="twitter:description"
+        content="Pag-IBIG Fund is a government-owned and controlled corporation in the Philippines that provides housing loans, savings, and other financial services to Filipino workers." />
+  <meta property="twitter:image" content="https://pagibig-fund-responsive-website-redesign.vercel.app/assets/images/pagibig-meta-data-logo.png" />
+  <meta name="twitter:image:alt" content="Pag-IBIG Fund Logo">
+
+  <!-- Favicon Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+
+  <title>Pag-IBIG Fund - About Us</title>
+
+  <!--************************************
+   $$$$$$\   $$$$$$\   $$$$$$\  
+  $$  __$$\ $$  __$$\ $$  __$$\ 
+  $$ /  \__|$$ /  \__|$$ /  \__|
+  $$ |      \$$$$$$\  \$$$$$$\  
+  $$ |       \____$$\  \____$$\ 
+  $$ |  $$\ $$\   $$ |$$\   $$ |
+  \$$$$$$  |\$$$$$$  |\$$$$$$  |
+   \______/  \______/  \______/ 
+                                
+  Description: CSS Section
+  **************************************-->
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
+  <!-- Styles CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!--**********************************************************
+  $$\   $$\                           $$\                     
+  $$ |  $$ |                          $$ |                    
+  $$ |  $$ | $$$$$$\   $$$$$$\   $$$$$$$ | $$$$$$\   $$$$$$\  
+  $$$$$$$$ |$$  __$$\  \____$$\ $$  __$$ |$$  __$$\ $$  __$$\ 
+  $$  __$$ |$$$$$$$$ | $$$$$$$ |$$ /  $$ |$$$$$$$$ |$$ |  \__|
+  $$ |  $$ |$$   ____|$$  __$$ |$$ |  $$ |$$   ____|$$ |      
+  $$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |      
+  \__|  \__| \_______| \_______| \_______| \_______|\__|      
+                                                              
+  Description: Header Section
+  ************************************************************-->
+  <header id="header">
+    <!-- Begin: Nav Section -->
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top shadow">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/pagibig-logo-transparent.png" 
+               alt="Pagibig Logo" 
+               class="navbar-logo">
+        </a>
+        <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+          <i class="fa-solid fa-sliders fa-lg navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Programs & Benefits</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#">Virtual Pag-IBIG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End: Nav Section -->
+  </header>
+
+  <!--************************************
+  $$\      $$\           $$\           
+  $$$\    $$$ |          \__|          
+  $$$$\  $$$$ | $$$$$$\  $$\ $$$$$$$\  
+  $$\$$\$$ $$ | \____$$\ $$ |$$  __$$\ 
+  $$ \$$$  $$ | $$$$$$$ |$$ |$$ |  $$ |
+  $$ |\$  /$$ |$$  __$$ |$$ |$$ |  $$ |
+  $$ | \_/ $$ |\$$$$$$$ |$$ |$$ |  $$ |
+  \__|     \__| \_______|\__|\__|  \__|
+                                      
+  Description: Main Section
+  **************************************-->
+  <main>
+
+    
+  </main>  
+
+  <!--**********************************************************
+  $$$$$$$$\                   $$\                         
+  $$  _____|                  $$ |                        
+  $$ |    $$$$$$\   $$$$$$\ $$$$$$\    $$$$$$\   $$$$$$\  
+  $$$$$\ $$  __$$\ $$  __$$\\_$$  _|  $$  __$$\ $$  __$$\ 
+  $$  __|$$ /  $$ |$$ /  $$ | $$ |    $$$$$$$$ |$$ |  \__|
+  $$ |   $$ |  $$ |$$ |  $$ | $$ |$$\ $$   ____|$$ |      
+  $$ |   \$$$$$$  |\$$$$$$  | \$$$$  |\$$$$$$$\ $$ |      
+  \__|    \______/  \______/   \____/  \_______|\__|      
+                                            
+  Description: Footer Section
+  ************************************************************-->
+  <footer id="footer">
+    <div class="container">
+      <!-- Section: Links Links  -->
+      <section class="d-flex justify-content-center justify-content-lg-between">
+        <div class="container text-center text-md-start my-5">
+          <div class="row mt-3">
+            <div class="col-md-6 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>
+                Pag-IBIG Fund
+              </h6>
+              <p>
+                Pag-IBIG, or the Home Development Mutual Fund, 
+                is a government-owned and controlled corporation in 
+                the Philippines that provides housing loans, savings, 
+                and other financial services to Filipino workers
+              </p>
+            </div>
+            <div class="col-md-6 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Quick Links
+              </h6>
+              <p>
+                <a href="#!" class="text-reset footer-link">
+                  Member Registration
+                </a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset footer-link">
+                  Housing Loan
+                </a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset footer-link">
+                  Multi-Purpose Loan
+                </a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset footer-link">
+                  Calamity Loan
+                </a>
+              </p>
+               <p>
+                <a href="#!" class="text-reset footer-link">
+                  Virtual Pag-IBIG
+                </a>
+              </p>
+            </div>
+           
+            <div class="col-md-6 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                About Us
+              </h6>
+              <p>
+                <a href="#!" class="text-reset footer-link">
+                  Chairman of the Board
+                </a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset footer-link">
+                  CEO's Corner
+                </a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset footer-link">
+                  Officers of the Fund
+                </a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset footer-link">
+                  News Release
+                </a>
+              </p>
+               <p>
+                <a href="#!" class="text-reset footer-link">
+                  Careers
+                </a>
+              </p>
+            </div>
+
+            <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+              <p>
+                <i class="fas fa-home me-2"></i> 
+                Manila, Philippines
+              </p>
+              <p>
+                <i class="fas fa-envelope me-2"></i>
+                contactus@pagibigfund.gov.ph
+              </p>
+              <p>
+                <i class="fas fa-phone me-2"></i> 
+                8724-4244
+              </p>
+              <p>
+                <i class="fa-brands fa-facebook me-2"></i>
+                PagIBIGFundOfficialPage
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- Section: Links Links  -->
+    </div>
+    
+    <!-- Copyright -->
+    <div class="text-center p-4 copyright-section">
+      Copyright 2019 © Pag-IBIG Fund. All rights Reserved. 
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!--************************************************************
+   $$$$$$\                      $$\            $$\               
+  $$  __$$\                     \__|           $$ |              
+  $$ /  \__| $$$$$$$\  $$$$$$\  $$\  $$$$$$\ $$$$$$\    $$$$$$$\ 
+  \$$$$$$\  $$  _____|$$  __$$\ $$ |$$  __$$\\_$$  _|  $$  _____|
+   \____$$\ $$ /      $$ |  \__|$$ |$$ /  $$ | $$ |    \$$$$$$\  
+  $$\   $$ |$$ |      $$ |      $$ |$$ |  $$ | $$ |$$\  \____$$\ 
+  \$$$$$$  |\$$$$$$$\ $$ |      $$ |$$$$$$$  | \$$$$  |$$$$$$$  |
+   \______/  \_______|\__|      \__|$$  ____/   \____/ \_______/ 
+                                    $$ |                         
+                                    $$ |                         
+                                    \__|                         
+                                
+  Description: Scripts Section
+  **************************************************************-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+          crossorigin="anonymous"></script>
+</body>
+</html>

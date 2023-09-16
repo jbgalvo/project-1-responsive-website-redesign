@@ -34,6 +34,7 @@ body {
   color: var(--text-black);
   overflow-x: hidden;
   padding-top: 70px;
+  scroll-behavior: smooth;
 }
 
 /*****************************************************************
@@ -318,6 +319,43 @@ Description: Footer Section
 #footer .footer-link:hover {
   color: var(--text-white) !important;
   text-decoration: underline;
+}
+
+/*********************************************************************
+ $$$$$$\                       $$\                           $$\     
+$$  __$$\                      $$ |                          $$ |    
+$$ /  \__| $$$$$$\  $$$$$$$\ $$$$$$\    $$$$$$\   $$$$$$$\ $$$$$$\   
+$$ |      $$  __$$\ $$  __$$\\_$$  _|   \____$$\ $$  _____|\_$$  _|  
+$$ |      $$ /  $$ |$$ |  $$ | $$ |     $$$$$$$ |$$ /        $$ |    
+$$ |  $$\ $$ |  $$ |$$ |  $$ | $$ |$$\ $$  __$$ |$$ |        $$ |$$\ 
+\$$$$$$  |\$$$$$$  |$$ |  $$ | \$$$$  |\$$$$$$$ |\$$$$$$$\   \$$$$  |
+ \______/  \______/ \__|  \__|  \____/  \_______| \_______|   \____/ 
+                                                                                                    
+
+Description: Contact Us Section
+*********************************************************************/
+#contact-us #message {
+  resize: none;
+}
+
+#contact-us input,
+#contact-us textarea {
+  background-color: var(--bg-light-white);
+  border-color: var(--text-light-3);
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 15px 20px;
+}
+
+#contact-us .contact-title {
+  color: var(--text-primary);
+  font-size: 30px;
+}
+
+#contact-us .contact-sub-title {
+  color: var(--text-light-2);
+  font-size: 17px;
 }
 
 /***********************************************

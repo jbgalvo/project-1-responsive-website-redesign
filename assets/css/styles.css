@@ -155,7 +155,10 @@ Description: Navigation Section CSS
   padding: 0.5rem 1rem;
   text-align: center;
   font-weight: 500;
+  text-decoration: none;
 }
+
+
 
 #header .navbar {
   -webkit-tranistion: all .2s linear;
@@ -335,11 +338,6 @@ Description: Media Queries Section CSS
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-  /* Nav Section */
-  #header .navbar-nav .nav-item .nav-link:hover,
-  #header .navbar-nav .nav-item .nav-link.active {
-    text-decoration: underline;
-  }
 
   /* Home Section */
   #home .learn-more-btn-section {
@@ -361,11 +359,6 @@ Description: Media Queries Section CSS
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
-  /* Nav Section */
-  #header .navbar-nav .nav-item .nav-link:hover,
-  #header .navbar-nav .nav-item .nav-link.active {
-    text-decoration: underline;
-  }
 
   /* Home Section */
   #home .learn-more-btn-section {
@@ -387,8 +380,5 @@ Description: Media Queries Section CSS
   #home .home-subtitle {
     font-size: 24px;
   }
-
-  
-
   
 }

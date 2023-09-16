@@ -6,7 +6,7 @@
   --secondary-font: 'Quicksand', sans-serif;
 
   /* Background color */
-  --bg-primary: #104183;
+  --bg-primary: #0D3972;
   --bg-secondary: #225985;
   --bg-white: #fff;
   --bg-black: #121212;
@@ -14,9 +14,10 @@
   --bg-light-2: #f2f7fa;
 
   /* Text Color Variables */
-  --text-primary: #104183;
+  --text-primary: #0D3972;
   --text-secondary: #225985;
   --text-white: #fff;
+  --text-light-white: #e5eaf5;
   --text-black: #121212;
   --text-black-2: #23272a;
   --text-light: #798089;
@@ -289,6 +290,37 @@ Description: Corporate Governance Section
 }
 
 
+/*******************************************************
+$$$$$$$$\                   $$\                         
+$$  _____|                  $$ |                        
+$$ |    $$$$$$\   $$$$$$\ $$$$$$\    $$$$$$\   $$$$$$\  
+$$$$$\ $$  __$$\ $$  __$$\\_$$  _|  $$  __$$\ $$  __$$\ 
+$$  __|$$ /  $$ |$$ /  $$ | $$ |    $$$$$$$$ |$$ |  \__|
+$$ |   $$ |  $$ |$$ |  $$ | $$ |$$\ $$   ____|$$ |      
+$$ |   \$$$$$$  |\$$$$$$  | \$$$$  |\$$$$$$$\ $$ |      
+\__|    \______/  \______/   \____/  \_______|\__|      
+                                                        
+
+Description: Footer Section
+*******************************************************/
+#footer {
+  background-color: var(--bg-primary);
+  color: var(--text-light-white);
+}
+
+#footer .copyright-section {
+  background-color: #0e366b;
+  color: var(--text-light-white);
+}
+
+#footer .footer-link {
+  text-decoration: none;
+}
+
+#footer .footer-link:hover {
+  color: var(--text-white) !important;
+  text-decoration: underline;
+}
 
 /***********************************************
 $$\      $$\                 $$\ $$\           

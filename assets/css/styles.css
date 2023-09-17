@@ -32,7 +32,6 @@ body {
   line-height: 1.75rem;
   background-color: var(--bg-white);
   color: var(--text-black);
-  overflow-x: hidden;
   padding-top: 70px;
   scroll-behavior: smooth;
 }
@@ -465,6 +464,12 @@ Description: Media Queries Section CSS
 
   #home .learn-more-btn-section {
     justify-content: center;
+  }
+
+  /* About Us Section */
+  #about-us .pagibig-section .row,
+  #about-us .objective-section .row {
+    flex-direction: column-reverse;
   }
 
   /* Latest News Section */

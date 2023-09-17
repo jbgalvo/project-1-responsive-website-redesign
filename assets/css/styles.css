@@ -481,7 +481,6 @@ Description: Media Queries Section CSS
   #latest-news .news-content-section h4 {
     text-align: left;
   }
-  
 
   /* About Us Home Section */
   .about-us-home-section .home-subtitle {
@@ -492,7 +491,17 @@ Description: Media Queries Section CSS
     font-size: 50px !important;
   }
 
-  /* Contact Us Home Section */
+  /* Officers - Home Section*/
+  .officers-home-section .row {
+    flex-direction: column-reverse;
+  }
+
+  /* Faqs - Home Section*/
+  .faqs-home-section .row {
+    flex-direction: column-reverse;
+  }
+
+  /* Contact Us - Home Section */
   .contact-us-home-section .row {
     flex-direction: column-reverse;
   }

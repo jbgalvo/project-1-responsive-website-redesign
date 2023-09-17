@@ -84,6 +84,10 @@ section .title h2:after {
   left: calc(50% - 3rem);
 }
 
+.text-primary-2 {
+  color: var(--text-primary);
+}
+
 /******************************************
  $$$$$$\  $$\                      $$\     
 $$  __$$\ $$ |                     $$ |    

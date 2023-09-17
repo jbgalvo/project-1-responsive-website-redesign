@@ -228,12 +228,13 @@ Description: Project 1 - Responsive Website Redesign
               <p class="contact-sub-title">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
               <form>
                 <div class="mb-3">
-                  <label for="name" class="form-label fw-bold">
+                  <label for="fullname" class="form-label fw-bold">
                     Fullname
                     <span class="text-danger">*</span>
                   </label>
                   <input type="text" 
-                         id="name"
+                         id="fullname"
+                         name="fullname"
                          class="form-control" 
                          placeholder="Ex. John Doe"
                          autocomplete="off"
@@ -246,6 +247,7 @@ Description: Project 1 - Responsive Website Redesign
                   </label>
                   <input type="email" 
                          id="email"
+                         name="email"
                          class="form-control" 
                          placeholder="Ex. name@example.com"
                          autocomplete="off"
@@ -257,6 +259,7 @@ Description: Project 1 - Responsive Website Redesign
                     <span class="text-danger">*</span>
                   </label>
                   <textarea id="message"
+                            name="message"
                             class="form-control"
                             placeholder="Enter a message here..."  
                             rows="5" 
@@ -264,10 +267,8 @@ Description: Project 1 - Responsive Website Redesign
                             autocomplete="off"
                             required></textarea>
                 </div>
-               
                 <div class="row mt-4">
                   <div class="d-grid gap-2 col-6 mx-auto">
-                    
                     <button type="reset" class="btn btn-primary p-3 rounded">Reset</button>
                   </div>
                    <div class="d-grid gap-2 col-6 mx-auto">
@@ -297,7 +298,7 @@ Description: Project 1 - Responsive Website Redesign
   ************************************************************-->
   <footer id="footer">
     <div class="container">
-      <!-- Section: Links Links  -->
+      <!-- Section: Links  -->
       <section class="d-flex justify-content-center justify-content-lg-between">
         <div class="container text-center text-md-start my-5">
           <div class="row mt-3">
@@ -314,74 +315,90 @@ Description: Project 1 - Responsive Website Redesign
               </p>
             </div>
             <div class="col-md-6 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
               <h6 class="text-uppercase fw-bold mb-4">
                 Quick Links
               </h6>
               <p>
-                <a href="#!" class="text-reset footer-link">
+                <a href="https://www.pagibigfundservices.com/PubReg/NewReg_Page.aspx" 
+                   target="_blank"
+                   class="text-reset footer-link">
                   Member Registration
                 </a>
               </p>
               <p>
-                <a href="#!" class="text-reset footer-link">
+                <a href="https://www.pagibigfund.gov.ph/Availmentofnewloan.html" 
+                   target="_blank"
+                   class="text-reset footer-link">
                   Housing Loan
                 </a>
               </p>
               <p>
-                <a href="#!" class="text-reset footer-link">
+                <a href="https://www.pagibigfund.gov.ph/STL_MPL_Calamity.html" 
+                   target="_blank"
+                   class="text-reset footer-link">
                   Multi-Purpose Loan
                 </a>
               </p>
               <p>
-                <a href="#!" class="text-reset footer-link">
-                  Calamity Loan
+                <a href="https://www.pagibigfund.gov.ph/loyaltycardPlus/" 
+                   target="_blank"
+                   class="text-reset footer-link">
+                  Loyalty Card Plus
                 </a>
               </p>
                <p>
-                <a href="#!" class="text-reset footer-link">
-                  Virtual Pag-IBIG
+                <a href="https://www.pagibigfund.gov.ph/pagibigbranchlocator.html" 
+                   target="_blank"
+                   class="text-reset footer-link">
+                  Branch Directory
                 </a>
               </p>
             </div>
-           
             <div class="col-md-6 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
               <h6 class="text-uppercase fw-bold mb-4">
                 About Us
               </h6>
               <p>
-                <a href="#!" class="text-reset footer-link">
+                <a href="https://dhsud.gov.ph/about-us/the-secretary/" 
+                   target="_blank"
+                   class="text-reset footer-link">
                   Chairman of the Board
                 </a>
               </p>
               <p>
-                <a href="#!" class="text-reset footer-link">
+                <a href="https://www.pagibigfund.gov.ph/cv/Acosta.html" 
+                   target="_blank"
+                   class="text-reset footer-link">
                   CEO's Corner
                 </a>
               </p>
               <p>
-                <a href="#!" class="text-reset footer-link">
-                  Officers of the Fund
+                <a href="https://www.pagibigfund.gov.ph/awards.html" 
+                   target="_blank"
+                   class="text-reset footer-link">
+                  Awards
                 </a>
               </p>
               <p>
-                <a href="#!" class="text-reset footer-link">
+                <a href="https://www.pagibigfund.gov.ph/2023news.html" 
+                   target="_blank"
+                   class="text-reset footer-link">
                   News Release
                 </a>
               </p>
-               <p>
-                <a href="#!" class="text-reset footer-link">
+              <p>
+                <a href="https://www.pagibigfund.gov.ph/plantilla.html" 
+                   target="_blank"
+                   class="text-reset footer-link">
                   Careers
                 </a>
               </p>
             </div>
-
             <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
               <p>
                 <i class="fas fa-home me-2"></i> 
-                Manila, Philippines
+                Mandaluyong, Philippines
               </p>
               <p>
                 <i class="fas fa-envelope me-2"></i>
@@ -392,15 +409,19 @@ Description: Project 1 - Responsive Website Redesign
                 8724-4244
               </p>
               <p>
-                <i class="fa-brands fa-facebook me-2"></i>
-                PagIBIGFundOfficialPage
+                <a href="https://www.facebook.com/PagIBIGFundOfficialPage"
+                   target="_blank"
+                   class="text-reset footer-link">
+                  <i class="fa-brands fa-facebook me-2"></i>
+                  PagIBIGFundOfficialPage
+                </a>
+                
               </p>
             </div>
-
           </div>
         </div>
       </section>
-      <!-- Section: Links Links  -->
+      <!-- Section: Links -->
     </div>
     
     <!-- Copyright -->
